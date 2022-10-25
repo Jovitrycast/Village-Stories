@@ -1,0 +1,71 @@
+    .activities .activity-card{
+        background-color: #fff;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+        .activity-card .head{
+            display: flex;
+            justify-content: space-between;
+        }
+        .activity-card .title{
+            font-family: Helvetica-rounded;
+        }
+        .activity-card .stories-about-you{
+            font-family: Helvetica-rounded;
+            font-size: .9em;
+        }
+        .mentions{
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            transition: transform .2s ;
+        }
+        .mentions:hover{
+            background-color: rgba(0, 0, 0, 0.103);
+            border-radius: 10px;
+            transform: scale(1.1);
+         }
+        .mentions-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+            .mention-title{
+                font-family: Helvetica-rounded;
+                font-size: .9em;
+                margin: 0;
+            }
+            .mention-sub{
+                font-family: Helvetica-regular;
+                font-size: .8em;
+                margin: 0;
+                opacity: 80%;
+            }
+        .activity{
+            display: flex;
+            gap: 10px;
+            transition: transform .2s;
+            padding: 5px;
+        }
+        .activity:hover{
+            background-color: rgba(0, 0, 0, 0.103);
+            border-radius: 10px;
+            transform: scale(1.1);
+         }
+            .activity-detail .name{
+                font-family: Helvetica-rounded;
+                margin: 0;
+            }
+            .activity-detail .activity-content{
+                font-size: .8em;
+                opacity: 80%;
+                margin: 0;
+            }
+            .activity-avatar{
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }

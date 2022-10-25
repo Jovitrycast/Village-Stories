@@ -1,0 +1,26 @@
+.explore-card{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    font-family: Helvetica-rounded;
+}
+    .topics-head{
+        font-family: Helvetica-rounded;
+        font-size: 1.2em;
+    }
+    .explore-card ul{
+        padding: 0;
+    }
+    .explore-card li{
+        list-style-type: none;
+        border-bottom: 2px solid rgba(46, 33, 100, 0.13);
+        padding: .5em;
+        transition: transform .2s;
+    }
+    .explore-card li:hover{
+       background-color: rgba(0, 0, 0, 0.103);
+       border-radius: 10px;
+       transform: scale(1.1);
+    }

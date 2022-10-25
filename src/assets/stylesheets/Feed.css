@@ -1,0 +1,119 @@
+.feed{
+    max-width: 50%;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+    .create-post{
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .type-content{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .avatar{
+        width: 50px;
+        align-self: flex-start;
+        border-radius: 100%;
+    }
+    .input-post{
+        border-radius: 20px;
+        background-color: #f2f4f7;
+        border: 1px solid rgba(0, 0, 0, 0.11);
+    }
+
+    .create-post-actions{
+        margin-top: 10px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 90%;
+        margin-left:auto;
+    }
+    .upload-icon{
+        align-self: flex-end;
+    }
+    .upload-image{
+        display: none;
+    }
+    .post-btn{
+        border-radius: 20px;
+        width: 100px;
+        margin-left: auto;
+    }
+
+    .post{
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+        .post .author{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+            .author .profile-post{
+                width: 50px;
+                border-radius: 100%;
+            }
+            .author .name{
+                font-family: Helvetica-rounded;
+                font-size: 1.2em;
+                margin: 0px;
+            }
+            .dot-menu{
+                margin-left: auto;
+                margin-right: 10px;
+                font-size: 1.5em;
+            }
+            .time{
+                font-size: .8em;
+                opacity: 90%;
+            }
+        .details{
+            padding: 0px 10px;
+        }
+        .details .name{
+            font-family: helvetica-rounded;
+        }
+        .details .post-icon{
+            font-size: 1.6em;
+            margin-right: 10px;
+        }
+
+        .img-post{
+            width: 100%;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .input-comment{
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.226);
+        }
+        .post-comment{
+            font-family: Helvetica-rounded;
+        }
+    
+@media only screen and (max-width:480px){
+    .feed{
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width:481px) and (max-width: 768px){
+    .feed{
+        max-width: 60%;
+    }
+    .author .profile-post{
+        margin: 0;
+    }
+}

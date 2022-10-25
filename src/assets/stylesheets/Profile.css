@@ -1,0 +1,103 @@
+.profile-page{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.profile-section{
+    width: 35%;
+}
+    .profile-menu{
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #fff;
+    }
+    .profile-menu ul{
+        padding: 0;
+    }
+    .profile-menu li{
+        list-style-type: none;
+        font-family: Helvetica-rounded;
+        font-size: 1.1em;
+        padding: 10px;
+        border-bottom: 1px solid #49607e2f;
+        transition: .3s;
+    }
+    .profile-menu li:hover{
+        background-color: rgba(0, 0, 0, 0.103);
+        border-radius: 10px;
+    }
+    .option-icon{
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
+   .profile-container{
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+    .profile-page-avatar{
+        width: 35%;
+        height: 35%;
+        border-radius: 100%;
+    }
+    .profile-name{
+        font-family: Helvetica-rounded;
+        font-size: 200%;
+    }
+    .profile-details{
+        align-self: flex-end;
+    }
+    .profile-stats{
+        display: flex;
+        gap: 10px;
+    }
+        .profile-stats span{
+            font-family: Helvetica-rounded;
+        }
+    .profile-post{
+        width: 60%;
+    }
+
+@media only screen and (max-width:480px){
+    .profile-page{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile-menu li{
+        font-size: 1em;
+    }
+    .profile-section{
+        width: 100%;
+    }
+    .profile-post{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    .profile-page{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile-menu li{
+        font-size: 1em;
+    }
+    .profile-section{
+        width: 90%;
+        margin: auto;
+        
+    }
+    .profile-post{
+        width: 90%;
+        margin: auto;
+    }
+}

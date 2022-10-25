@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Helvetica-bold;
+    src: url('../fonts/Helvetica/Helvetica-Bold.ttf');
+}
+@font-face {
+    font-family: Helvetica-rounded;
+    src: url('../fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf');
+}
+@font-face {
+    font-family: Helvetica-regular;
+    src: url('../fonts/Helvetica/Helvetica.ttf');
+}
+.login-page{
+    padding: 20px;
+}
+.logo{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #02244F; 
+    animation: fadeIn 1.5s;
+}
+    .logo h1,h2{
+        font-family: Helvetica-rounded;
+        font-size: 2.5em;
+    }
+    .logo p{
+        font-family: Helvetica-regular;
+        font-size: 1em;
+    }
+.form-container{
+    animation: fadeIn 4s;
+}
+    .login-form{
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 10px;
+        background-color: #fff;
+    }
+
+    .login-form h2{
+        display: none;
+        color: #02244F;
+        font-family: Helvetica-rounded;
+    }
+
+    .login-btn{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 50%;
+    }
+    .signUp-btn{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+@media only screen and (min-width: 1024px){
+    .login-page{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        height: 100vh;
+    }
+    .logo{
+        width: 50%;
+    }
+        .logo img{
+            width: 200px;
+        }
+        .logo h1{
+            font-size: 4em;
+        }
+        .logo p{
+            font-size: 1.5em;
+        }
+    .form-container{
+        width: 50%
+    }
+    .login-form{
+        width: 70%;
+        min-height: 65vh;
+        margin: auto;
+    }
+        .login-form h2{
+            font-size: 2.5em;
+            display: block;
+            text-align: center;
+            margin-bottom: 55px;
+        }
+}

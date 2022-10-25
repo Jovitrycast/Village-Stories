@@ -1,0 +1,34 @@
+.main{
+    padding: 10px;
+    display: flex;
+}
+
+.left-panel{
+    width: 25%;
+    animation: fadeIn 2s;
+}
+.right-panel{
+    width: 25%;
+    animation: fadeIn 2s;
+}
+.responsive-explore{
+    display: none;
+}
+
+@media only screen and (max-width:480px){
+    .left-panel ,.right-panel{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    .left-panel{
+        display: none;
+    }
+    .responsive-explore{
+        display: block;
+    }
+    .right-panel{
+        min-width: 40%;
+    }
+}

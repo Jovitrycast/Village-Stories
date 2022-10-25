@@ -1,0 +1,15 @@
+footer{
+    font-size: .7em;
+    max-width: 80%;
+    margin: auto;
+}
+footer ul{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+footer p{
+    text-align: center;
+}
